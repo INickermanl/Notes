@@ -1,4 +1,4 @@
-package nickerman.com.notes.navigation.factories;
+package nickerman.com.notes.util.navigation.factories;
 
 
 public class ScreenFragmentFactory {

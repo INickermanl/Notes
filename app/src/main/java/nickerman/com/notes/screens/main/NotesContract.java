@@ -4,7 +4,7 @@ import java.util.List;
 
 import nickerman.com.notes.adapters.INoteClick;
 import nickerman.com.notes.models.Note;
-import nickerman.com.notes.navigation.Navigator;
+import nickerman.com.notes.util.navigation.Navigator;
 
 public interface NotesContract {
     interface View{

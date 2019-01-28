@@ -1,4 +1,4 @@
-package nickerman.com.notes.navigation.factories;
+package nickerman.com.notes.util.navigation.factories;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import nickerman.com.notes.EditActivity;
 import nickerman.com.notes.NotesActivity;
 import nickerman.com.notes.base.App;
-import nickerman.com.notes.navigation.Screen;
+import nickerman.com.notes.util.navigation.Screen;
 
 
 public class ScreenActivityFactory {

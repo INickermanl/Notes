@@ -10,8 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.inputmethod.InputMethodManager;
 
-import nickerman.com.notes.navigation.Navigator;
-import nickerman.com.notes.navigation.managers.ScreenNavigationManager;
+import nickerman.com.notes.util.navigation.Navigator;
+import nickerman.com.notes.util.navigation.managers.ScreenNavigationManager;
 import timber.log.Timber;
 
 public class BaseActivity extends AppCompatActivity {

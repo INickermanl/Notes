@@ -8,9 +8,9 @@ import java.util.List;
 import nickerman.com.notes.adapters.INoteClick;
 import nickerman.com.notes.base.Constants;
 import nickerman.com.notes.models.Note;
-import nickerman.com.notes.navigation.Navigator;
-import nickerman.com.notes.navigation.Screen;
-import nickerman.com.notes.navigation.ScreenType;
+import nickerman.com.notes.util.navigation.Navigator;
+import nickerman.com.notes.util.navigation.Screen;
+import nickerman.com.notes.util.navigation.ScreenType;
 
 public class NotesPresenter implements NotesContract.Presenter, INoteClick {
 

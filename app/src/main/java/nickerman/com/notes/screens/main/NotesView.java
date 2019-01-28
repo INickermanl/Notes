@@ -10,6 +10,7 @@ import nickerman.com.notes.R;
 import nickerman.com.notes.adapters.AdapterMainNotes;
 import nickerman.com.notes.adapters.INoteClick;
 import nickerman.com.notes.models.Note;
+import nickerman.com.notes.util.ui.VerticalSpacingItemDecorator;
 
 public class NotesView implements NotesContract.View {
 
@@ -18,7 +19,7 @@ public class NotesView implements NotesContract.View {
     private RecyclerView.Adapter adapter;
 
     public NotesView(View root) {
-        this.root  = root;
+        this.root = root;
 
         initView();
     }
@@ -28,10 +29,12 @@ public class NotesView implements NotesContract.View {
     }
 
     @Override
-    public void setAdapter(List<Note> notes, INoteClick iNoteClick){
+    public void setAdapter(List<Note> notes, INoteClick iNoteClick) {
 
         LinearLayoutManager llm = new LinearLayoutManager(root.getContext());
-        adapter = new AdapterMainNotes(notes,iNoteClick);
+        adapter = new AdapterMainNotes(notes, iNoteClick);
+        VerticalSpacingItemDecorator vsd = new VerticalSpacingItemDecorator(10);
+        recyclerView.addItemDecoration(vsd);
         recyclerView.setLayoutManager(llm);
         recyclerView.setAdapter(adapter);
 

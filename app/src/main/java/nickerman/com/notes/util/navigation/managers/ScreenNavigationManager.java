@@ -1,15 +1,15 @@
-package nickerman.com.notes.navigation.managers;
+package nickerman.com.notes.util.navigation.managers;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import nickerman.com.notes.base.BaseActivity;
-import nickerman.com.notes.navigation.Navigator;
-import nickerman.com.notes.navigation.Screen;
-import nickerman.com.notes.navigation.ScreenAnimType;
-import nickerman.com.notes.navigation.ScreenType;
-import nickerman.com.notes.navigation.factories.ScreenActivityFactory;
-import nickerman.com.notes.navigation.factories.ScreenFragmentFactory;
+import nickerman.com.notes.util.navigation.Navigator;
+import nickerman.com.notes.util.navigation.Screen;
+import nickerman.com.notes.util.navigation.ScreenAnimType;
+import nickerman.com.notes.util.navigation.ScreenType;
+import nickerman.com.notes.util.navigation.factories.ScreenActivityFactory;
+import nickerman.com.notes.util.navigation.factories.ScreenFragmentFactory;
 
 
 public class ScreenNavigationManager implements Navigator {

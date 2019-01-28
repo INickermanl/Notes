@@ -1,4 +1,4 @@
-package nickerman.com.notes.navigation;
+package nickerman.com.notes.util.navigation;
 
 import android.os.Bundle;
 
