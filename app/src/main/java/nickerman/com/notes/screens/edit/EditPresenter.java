@@ -9,7 +9,14 @@ public class EditPresenter implements EditContract.Presenter {
     private EditContract.View view;
     private CompositeDisposable subscription;
 
-    public EditPresenter() {
+    public EditPresenter(int notePosition) {
+        if(notePosition == -1){
+            view.editMode(true);
+        }else{
+            view.editMode(false);
+        }
+
+
         subscription = new CompositeDisposable();
     }
 

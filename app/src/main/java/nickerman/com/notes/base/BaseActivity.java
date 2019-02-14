@@ -46,7 +46,7 @@ public class BaseActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-    super.onBackPressed();
+        super.onBackPressed();
     }
 
 
@@ -93,6 +93,7 @@ public class BaseActivity extends AppCompatActivity {
         Runtime.getRuntime().gc();
         System.gc();
     }
+
     public void hideKeyboard() {
         try {
             IBinder windowToken = getWindow().getDecorView().getRootView().getWindowToken();
@@ -102,8 +103,13 @@ public class BaseActivity extends AppCompatActivity {
             Timber.e(e.getLocalizedMessage());
         }
     }
-     public Navigator getNavigator(){
+
+    public Navigator getNavigator() {
         return this.navigator;
+    }
+
+    public BaseActivity getActivity() {
+        return this;
     }
 
 }
